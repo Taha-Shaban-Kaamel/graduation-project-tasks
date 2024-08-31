@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="invoice-container">
+        <header>
+            <div class="logo">
+                <h2>NEW HOPE</h2>
+            </div>
+            <div class="PoNO">
+                <div dir="rtl" >
+                    <label for="">امر توريد :</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                <label for="internal">محلي</label>
+                <input type="checkbox" name="internal" id="">    
+                <label for="external">خارجي</label>
+                <input type="checkbox" name="external" id="">
+                </div>
+                
+            </div>
+            <div class="document-info">
+                <div>
+                    <label for="">Doc. No:</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                      <label for="">Rev. Date:</label>
+                <input type="date" name="" id="">
+                </div>
+                <div>
+                      <label for="">Revision No:</label>
+                <input type="number" name="" id="">
+                </div>
+                <p>Page 1 of 1 </p>
+            </div>
+        </header>
+
+        <section class="address-section">
+            <div>
+
+            
+            <div class="to-info">
+                <label for="to">To: / إلى:</label>
+                <input type="text" id="to" name="to">
+            </div>
+            <div class="address-info">
+                <label for="address">Address: / العنوان:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="tel-info">
+                <label for="tel">Tel.: / الهاتف:</label>
+                <input type="text" id="tel" name="tel">
+            </div>
+            <div class="fax-info">
+                <label for="fax">Fax: / الفاكس:</label>
+                <input type="text" id="fax" name="fax">
+            </div>
+        </div>
+           
+        </section>
+
+        <div class="table-container">
+            <table dir="rtl" class="invoice-table" id="invoiceTable">
+                <thead>
+                    <tr>
+                        <th>QTY / الكمية</th>
+                        <th>Unit / الوحدة</th>
+                        <th>Description / الوصف</th>
+                        <th>Unit Price / سعر الوحدة</th>
+                        <th>Total Price / السعر الإجمالي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="qty"></td>
+                        <td><input type="text" name="unit"></td>
+                        <td><input type="text" name="description"></td>
+                        <td><input type="text" name="unit-price"></td>
+                        <td><input type="text" name="total-price"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="addRowBtn">Add Row / إضافة صف</button>
+        </div>
+
+        <div class="totals">
+            <div class="totals-row">
+                <label for="sub-total">Sub-Total / الإجمالي الفرعي:</label>
+                <input type="text" id="sub-total" name="sub-total">
+            </div>
+            <div class="totals-row">
+                <label for="sales-tax">Sales Taxes / ضريبة المبيعات:</label>
+                <input type="text" id="sales-tax" name="sales-tax">
+            </div>
+            <div class="totals-row">
+                <label for="another-tax">Another Taxes / ضرائب أخرى:</label>
+                <input type="text" id="another-tax" name="another-tax">
+            </div>
+            <div class="totals-row">
+                <label for="total">Total / الإجمالي:</label>
+                <input type="text" id="total" name="total">
+            </div>
+        </div>
+
+        <footer>
+            <p>If you will not deliver as required delivery time, please tell us immediately.</p>
+            <p>إذا لم تتمكن من التسليم في الوقت المطلوب، يرجى إبلاغنا على الفور.</p>
+            <label for="date">Date: / التاريخ:</label>
+            <input type="text" id="date" name="date">
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
